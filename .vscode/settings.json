@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/89ad4913-6e1f-4552-9012-084e097433fa/resourceGroups/ZhouResume/providers/Microsoft.Web/sites/ZhouResume",
+    "appService.deploySubpath": ""
+}

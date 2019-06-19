@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stylesheets/js.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>履歷</title>
+</head>
+
+<body>
+    <nav class="top-menu">
+        <ul>
+            <a href="#" id="main">作品集</a>
+            <li><a href="https://www.cakeresume.com/s--uC8v67YXJnWdMvKCcqQQSw--/loveuu860426"><i class="fas fa-book-open"></i>履歷表</a></li>
+        </ul>
+    </nav>
+    <div class="second">
+        <h1>Alan Zhou 鄒維賢的作品集</h1>
+    </div>
+    <div class="collection">
+        <div id="collection-item">
+            <div class="container">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="https://github.com/Zhou0426z" target="_blank"><i class="fab fa-github-square"></i></a></li>
+            <li><i class="fas fa-envelope-open"></i>:  loveuu860426@gmail.com</li>
+            <li><i class="fas fa-phone"></i>: 0963-516-830</li>
+
+        </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        var text = "";
+        var value = [{
+                title: "Style'g電商網站",
+                img: "images/電商.png",
+                a: "https://shopmvc.azurewebsites.net/shopIndex/Index2"
+            },
+            {
+                title: "貓奴無極限(手刻+RWD)",
+                img: "images/cat.jpg",
+                a: "https://zhou0426z.azurewebsites.net/"
+            },
+            {
+                title: "信義房屋復刻-Bootstrap",
+                img: "images/xinyi.jpg",
+                a: "https://xinyiweb.azurewebsites.net/"
+            },
+            {
+                title: "1A2B猜數字小遊戲",
+                img: "images/1A2B.jpg",
+                a: "https://js-lab.azurewebsites.net/guess-number.html"
+            },
+            {
+                title: "生命靈數",
+                img: "images/生命靈數.png",
+                a: "https://js-lab.azurewebsites.net/horoscope.html"
+            },
+            {
+                title: "計算機",
+                img: "images/計算機.png",
+                a: "https://js-lab.azurewebsites.net/cal.html"
+            },
+            {
+                title: "拼圖",
+                img: "images/puzzle.jpg",
+                a: "https://js-jq-hw.azurewebsites.net/puzzle.html"
+            },
+            {
+                title: "記憶遊戲",
+                img: "images/記憶遊戲.png",
+                a: "https://js-jq-hw.azurewebsites.net/memory-game.html"
+            },
+            {
+                title: "抽獎機",
+                img: "images/抽獎機.png",
+                a: "https://js-jq-hw.azurewebsites.net/choosenumber.html"
+            },
+            {
+                title: "打地鼠小遊戲",
+                img: "images/打地鼠.png",
+                a: "https://jq-hac.azurewebsites.net/mole-planned.html"
+            }
+        ];
+        for (var i = 0; i < value.length; i++) {
+            text += "<div class='item'><div class='card-title'>" + value[i].title + "</div><a href='" + value[i].a +
+                "' target='_blank'><img src='" + value[i].img + "' alt='#'></a></div>"
+        }
+        $('#collection-item .container').html(text);
+    </script>
+</body>
+
+</html>
